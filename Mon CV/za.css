@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container>.cv{
+    position: relative;
+    width: 505px;
+    height: 700px;
+    background: white;
+    box-shadow: 0 0 10px gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.container>.cv>.triangle{
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    background: #000b69;
+    border: 10px solid #09f;
+}
+.container>.cv>.triangle:nth-child(1){
+    bottom: 100%;
+    left: 100%;
+    transform: translate(-80%, 50%) rotate(8deg);
+}
+.container>.cv>.triangle:nth-child(2){
+    bottom: 100%;
+    right: 100%;
+    transform: translate(62%, 40%) 
+}
+.container>.cv>.triangle:nth-child(3){
+    top: 100%;
+    right: 100%;
+    transform: translate(80%, -35%) rotate(8deg);
+}
+.container>.cv>.triangle:nth-child(4){
+    top: 100%;
+    left: 100%;
+    transform: translate(-35%, -55%) rotate(-22deg);
+}
+
+
+
+.container>.cv>#partie-gauche>#photo{
+    position: absolute;
+    top: 4%;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    border: 8px solid white;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px #333;
+    overflow: hidden;
+}
+.container>.cv>#partie-gauche>#photo img{
+    width: 100%;
+    transform: translateY(10%);
+}
+.container>.cv>#partie-gauche h3{
+    width: 100%;
+    text-align: center;
+    color: #000b69;
+}
+.container>.cv>#partie-gauche .liste>li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: flex;
+}
+.container>.cv>#partie-gauche>.skills>li{
+    align-items: center;
+    justify-content: space-between;
+}
+.container>.cv>#partie-gauche>.contact>li{
+    align-items: center;
+    justify-content: start;
+}
+/* .container>.cv>#partie-gauche>.contact */
+.container>.cv>#partie-gauche .liste>li>div{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    background: #09f;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container>.cv>#partie-gauche .liste>li img{
+    width: 15px;
+}
+.container>.cv>#partie-gauche .liste>li span{
+    display: flex;
+    margin-left: 20px;
+}
+.container>.cv>#partie-gauche .liste>li .mini-circle{
+    width: 5px;
+    height: 5px;
+    margin: 3px;
+    border-radius: 100%;
+    background: #000b69;
+}
+.container>.cv>#partie-gauche .liste>li .sky{
+    background: #09f;
+}
+.container>.cv>#partie-gauche>p{
+    position: absolute;
+    bottom: 3%;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Gestion partie droite */
+
+.container>.cv>#partie-droite>#name-job{
+    position: absolute;
+    top: 4%;
+    right: 8%;
+    text-align: center;
+    color: white;
+}
+.container>.cv>#partie-droite>#name-job strong{
+    font-size: 20px;
+}
+.container>.cv>#partie-droite>#name-job em{
+    font-size: 12px;
+    opacity: 0.8;
+}
+.container>.cv>#partie-droite>.titre{
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 11px;
+    border-radius: 20px;
+    background: #09f;
+    color: white;
+    width: 180px;
+    /* margin-bottom: 10px; */
+}
+.container>.cv>#partie-droite>.titre h2{
+    padding: 8px 30px;
+    width: 175px;
+    background: #000b69;
+    border-radius: 20px;
+    text-align: center;
+}
+.container>.cv>#partie-droite p{
+    font-size: 10px;
+    text-align: justify;
+}
+.container>.cv>#partie-droite>ul{
+    margin-left: 50px;
+    border-left: 2px solid #000b69;
+}
+.container>.cv>#partie-droite>ul>li{
+    list-style: none;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.container>.cv>#partie-droite>ul>li>h6{
+    color: #000b69;
+    margin-bottom: 2px;
+}
+.container>.cv>#partie-droite>ul>li>.date{
+    position: absolute;
+    top: 0;
+    right: 100%;
+    transform: translateX(-30%);
+    font-size: 13px;
+    color: #000b69;
+    width: 40px;
+}
+
+
+
